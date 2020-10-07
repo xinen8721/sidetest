@@ -172,10 +172,10 @@ How to View Results:
 }
 
 ```
-ToDo:
-1. Add DB layer to persist data, such as user, property, transactions, etc.
-2. Add Cache Layer in Graphql to cache the response for a short period, or without the interval cache support from graphql, we can onboard redis/memcached as external cache support.
-3. Make the API endpoint to support more arguments so that it can be used to filter and return more accurate results from Graphql.
-4. Mutation TBD
+# ToDo:
+## 1. Add DB layer to persist data, such as user, property, transactions, etc.
+## 2. Add Cache Layer in Graphql to cache the response for a short period, or without the interval cache support from graphql, we can onboard redis/memcached as external cache support.
+## 3. Make the API endpoint to support more arguments so that it can be used to filter and return more accurate results from Graphql.
+## 4. Mutation TBD
 
 

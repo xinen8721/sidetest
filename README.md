@@ -1,5 +1,5 @@
 
-Installation Steps:
+# Installation Steps:
 
 1. Node version: 10.16.0
 2. To install all the modules, run "npm install"
@@ -8,12 +8,14 @@ Installation Steps:
 
 How to View Results:
 
-1. Authorized User with valid token:
-Request:
-  "curl -H "authorization: 676cfd34-e706-4cce-87ca-97f947c43bd4" http://localhost:4000/properties\?city\=Houston "
+# 1. Authorized User with valid token:
+## Request:
+ ```
+ curl -H "authorization: 676cfd34-e706-4cce-87ca-97f947c43bd4" http://localhost:4000/properties\?city\=Houston 
+ ```
 
-Response:
-
+## Response:
+```
 {
     "data": {
         "getAllProperties": [
@@ -137,15 +139,17 @@ Response:
         ]
     }
 }
+```
+# 2. Unauthorized User with no token:
 
-2. Unauthorized User with no token:
+## Request:
+  ```
+  curl http://localhost:4000/properties\?city\=Houston
+  ```
 
-Request:
-  "curl http://localhost:4000/properties\?city\=Houston"
 
-
-Response:
-
+## Response:
+```
 {
     "errors": [
         {
@@ -167,7 +171,7 @@ Response:
     ]
 }
 
-
+```
 ToDo:
 1. Add DB layer to persist data, such as user, property, transactions, etc.
 2. Add Cache Layer in Graphql to cache the response for a short period, or without the interval cache support from graphql, we can onboard redis/memcached as external cache support.
